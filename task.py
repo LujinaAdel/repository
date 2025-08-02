@@ -410,12 +410,11 @@
 #     return "hello py"
 # dstsfromfunction=function_name()
 # print(dstsfromfunction)
-"""""
-def say_hello(n):
-    print ("hello {n}")
+# def say_hello(n):
+#     print (f"hello {n}")
 
-say_hello("logy")
-"""""
+# say_hello("logy")
+
 
 # def addition(n1,n2):
 #     print(n1+n2)
@@ -432,49 +431,129 @@ say_hello("logy")
 # addition("logy","Lujina")
 
 
-    
+# print((1,2,3,4,5,6,7,8))
+# mylist=[1,2,3,4,5,6,7,8]
+# print(mylist)
+# print(*mylist)
+
+# def say_hello(people , *skills):
+#     print(f"hello {people} your skills are :")
+#     for skill in skills:
+#         print(skill)
+
+# say_hello("logy","py","php","sql")
+# say_hello("mohamed","js","py")
+
+# # TASK TEST:
+# def say_py(*numbers):
+#     for num in numbers:
+#         print(f"the number: {num}")
+# say_py(1,2,3)
+
+# def say_hello(name , age , contry = "unknown"):
+#     print(f"hello{name} your age is : {age} your contry :{contry}")
+
+# say_hello("lujina", 16 , "jordon")
+# say_hello("logy", 10 ) # error في حاله اننا مش كاتبين unknown
+# def show_skills(*skills):
+#     print(type(skills))
+#     for skill in skills:
+#         print(f"your skill is :{skill}")
+# show_skills("html","css","py")
+
+# # PACKING , UNPACKING
+# def show_skills(**skills):
+#     print(type(skills))
+#     for skill , value in skills.items():
+#         print(f"your skill is :{skill} = {value}")
+# show_skills (HTML="50%",CSS ="70%",PY="100%")
+
+
+# # as dictionary
+# myskills={"HTML":"50%",
+#           "CSS" :"70%",
+#           "PY":"100%"
+# }
+# def show_skills(**skills):
+#     print(type(skills))
+#     for skill , value in skills.items():
+#         print(f"your skill is :{skill} = {value}")
+# show_skills (**myskills)
 
 
 
-    
+# # revsion
+# myskills={"HTML":"50%",
+#           "CSS" :"70%",
+#           "PY":"100%"}
+# def show_skills(name,*skills ,**skillswhithprogres):
+#     print(f"hello {name} \n skills without progress: ")
+#     for skill in skills:
+#         print(f"- {skill}")
+# show_skills("logy", "html" , "py" , "css" , "js")
+# for skill_key , skill_value in skillswhithprogres.items():
+#     print(f"-{skill_key} = {skill_value}")
 
+# show_skills("osama")
 
+# scope
+# r =1
+# def one():
+#     print(f"print variable from function scope {r}")
 
+# print(f"print variable from global scope {r}")
+# one()
+"""
+recursion
+x = "wwooooooooorllddd"
+def cleanworld(word):
+    if len(word) ==1 :
+        return word
+    if word[0] == word[1]:
+        return cleanworld(word[1:])
+    return word[0] + cleanworld(word[1:])
 
+print(cleanworld("wwooooooooorllddd"))
+"""
+# def say_hello(name):
+#     return f"hello {name}"
+# hello = lambda name : f"hello {name}"
+# print(say_hello("logy"))
+# print(hello("logina"))
 
+# import logy
+# print(logy.getcwd())
 
+# file= open (r"C:\logy.text")
 
+# mylist = ["logy","rodina","lujina"]
+# myfile = open("C:\logy.text","w")
+# myfile.writelines(mylist)
 
+# x = [1 , 3,4,5,6,7]
+# if all(x):
+#     print("all true")
 
+# else:
+#     print("at least one element")
+# x = [1 , 3,4,5,6,7]
+# if any(x):
+#     print("at least one true")
 
+# else:
+#     print("at least one element")
 
+# a=1
+# n=2
+# print(id(a))
+# print(id(n))
 
+# print(list(range(0)))
+# print(list(range(10)))
+# print(list(range(0,40,2)))
+# print(hello,logy sep="@")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-    
-
+######59___70#####
 
 
 
